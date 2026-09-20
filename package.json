@@ -2,6 +2,8 @@
   "name": "protein-claim-registry",
   "private": true,
   "scripts": {
-    "test": "node test_service.js"
+    "test": "node test_service.js",
+    "seed": "python3 seed.py --store data/demo.jsonl --approve",
+    "start": "python3 service.py --port 8000"
   }
 }
